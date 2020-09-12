@@ -1,0 +1,53 @@
+.pagination {
+	display: flex;
+	align-items: center;
+	@media (min-width: $maxwidth3) {
+		margin: 0px 30px 0px 0px;
+	}
+	&__list {
+		display: flex;
+		align-items: center;
+		& > * {
+			&:not(:last-child) {
+				margin: 0px 22px 0px 0px;
+			}
+		}
+	}
+
+	// .pagination__arrow
+	&__arrow {
+		width: 6px;
+		height: 6px;
+		border: solid black;
+		border-width: 0 1px 1px 0;
+		display: inline-block;
+		&--prev {
+			margin: 0px 22px 0px 0px;
+			transform: rotate(135deg);
+		}
+		&--next {
+			margin: 0px 0px 0px 22px;
+			transform: rotate(-45deg);
+		}
+	}
+
+	// .pagination__link
+
+	&__link {
+		position: relative;
+		color: $pagination-color;
+		&.is-active {
+			color: $pagination-color-hover;
+			&:after {
+				content: "";
+				position: absolute;
+				bottom: -5px;
+				left: 50%;
+				transform: translateX(-50%);
+				width: 10px;
+				height: 2px;
+				background-color: #f3a4a9;
+			}
+		}
+	}
+}

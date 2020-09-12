@@ -1,0 +1,51 @@
+<div class="product-card">
+    <div class="product-card__photo">
+        <img src="../img/products/8.png" alt="Фото продукта" />
+        <div class="product-card__like js-like-btn">
+            <span class="m-icon m-icon--heart"></span>
+        </div>
+        <a href="" class="product-card__button btn btn--secondary">Подробнее</a>
+    </div>
+    <span class="product-card__mark product-card__mark--new">New!</span>
+    <span class="product-card__mark product-card__mark--sale">Sale</span>
+    <div class="product-card__body">
+        <div class="product-card__name">Бюстгальтер без косточек Clara Ar</div>
+        <span class="product-card__price product-card__price--old">7 590 ₽</span>
+        <span class="product-card__price product-card__price--new"></span>
+    </div>
+    <div class="product-card__colors filter-color">
+        <ul class="filter-color__list">
+            <li>
+                @@include('./modules/color-badge/color-badge.html', {
+                    "color": "#C3C6CD",
+                    "group": "l-1",
+                    "class": "color-badge__label--small"
+                })
+            </li>
+            <li>
+                @@include('./modules/color-badge/color-badge.html', {
+                    "color": "#9399A9",
+                    "group": "l-2",
+                    "class": "color-badge__label--small"
+                })
+            </li>  
+            <li>
+                @@include('./modules/color-badge/color-badge.html', {
+                    "color": "#6C626D",
+                    "group": "l-3",
+                    "class": "color-badge__label--small"
+                })
+            </li>  
+            <li>
+                @@include('./modules/color-badge/color-badge.html', {
+                    "color": "#696981",
+                    "group": "l-4",
+                    "class": "color-badge__label--small"
+                })
+            </li>    
+            <li class="product-card__more">
+                <span class="m-icon m-icon--cross"></span>
+            </li> 
+        </ul>
+    </div>
+</div>

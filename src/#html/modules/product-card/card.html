@@ -1,0 +1,23 @@
+<div class="product-card">
+    <div class="product-card__photo">
+        <img src="@@if(context.photo){@@photo}@@if(!context.photo){}" alt="Фото продукта" />
+        <div class="product-card__like js-like-btn">
+            @@include('./mixins/svg-icon.html', {"name":"heart", "mod":""})
+        </div>
+        <a href="" class="product-card__button btn btn--secondary">Подробнее</a>
+    </div>
+    <div class="product-card__marks">
+        @@if(context.new){<span class="product-card__mark product-card__mark--new">New!</span>}
+        @@if(context.sale){<span class="product-card__mark product-card__mark--sale">Sale</span>}
+    </div>
+    <div class="product-card__body">
+        <div class="product-card__name">
+            @@name
+        </div>
+        @@if(context.priceOld) {<span class="product-card__price product-card__price--old">@@priceOld</span>}
+        @@if(context.priceNew) {<span class="product-card__price product-card__price--new">@@priceNew</span>}
+    </div>
+    <div class="product-card__colors">
+        @@module
+    </div>
+</div>

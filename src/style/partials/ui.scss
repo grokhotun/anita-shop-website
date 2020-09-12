@@ -1,0 +1,91 @@
+.icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+}
+
+.icon-filter-list {
+    width: 21px;
+    height: 21px;
+}
+
+.icon-heart {
+    stroke: #000000;
+    &.is-active {
+        fill: #ff0000;
+        stroke: #ff0000;
+        stroke-width: 5px;
+    }
+}
+
+.social-icon {
+    width: 25px;
+    height: 25px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 44px;
+    border-radius: 10px;
+    transition: .3s;
+    &--primary {
+        background-color: $bg-btn-primary;
+        color: $white;
+        &:hover{
+            background: darken($color: $bg-btn-primary, $amount: 10%);
+        }
+    }
+    &--secondary {
+        background-color: $white;
+        border: 0.5px solid $border-btn-primary;
+        color: $text-color-secondary;
+    }
+}
+
+.input-field {
+    background: #FAFAFA;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    width: 100%;
+    height: 36px;
+    padding: 0px 0px 0px 48px;
+}
+
+.color-badge {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    input {
+        display: none;
+    }
+
+    input:checked + .color-badge__label:after {
+        content: '';
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 120%;
+        height: 120%;
+        border-radius: 50%;
+        border: 1px solid #FF5D5D;
+    }
+
+    &__label {
+        position: relative;
+        cursor: pointer;
+        display: inline-block;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        &--small {
+            width: 16px;
+            height: 16px;
+            @media (max-width:$maxwidth3){
+                width: 10px;
+                height: 10px;
+            }
+        }
+    }
+}

@@ -1,0 +1,56 @@
+//Основные шрифты
+$fontfamily: "Circe";
+
+//Основные размеры экранов
+$minwidth: 320px;
+$maxwidth: 1500;
+
+$maxwidth1: $maxwidth+12px;
+$maxwidth2:  992.98px;
+$maxwidth3:  767.98px;
+$maxwidth4:  479.98px;
+
+
+$burger-color: #EE766C;
+
+//Основная палитра цветов
+$white: #fff;
+$black: #000;
+
+$x-color-orange: #EE766C;
+$x-color-pink-2: #F0877F;
+$x-color-orange-2: #DE5044;
+$x-color-gray: #dddddd;
+$x-color-pink: #F8F8F8;
+$x-color-dark: #525252;
+$x-color-light-pink: #FAFAFA;
+
+$x-color-light-grey: #9A9A9A;
+$x-color-light-grey-2: #F7F7F7;
+
+//Переменные для стилей
+$font-primary: "Circe";
+$font-secondary: "Cormorant";
+
+$text-color-primary: $black;
+$text-color-secondary: $x-color-orange;
+$text-color-tertiary: $x-color-gray;
+$price-color: $x-color-dark;
+
+$pagination-color: $x-color-light-grey;
+$pagination-color-hover: $x-color-orange-2;
+
+$bg-aside: $x-color-light-pink;
+
+$border-btn-primary: $x-color-pink-2;
+$bg-btn-primary: $x-color-orange;
+$bg-btn-secondary: #000;
+
+$bg-burger: $x-color-pink;
+
+$bg-footer-top-color: $x-color-light-pink;
+$bg-footer-bot-color: $x-color-light-grey-2;
+$breadcrumbs-link: $black;
+
+
+

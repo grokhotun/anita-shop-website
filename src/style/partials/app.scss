@@ -1,0 +1,107 @@
+//Миксины
+@import "mixins.scss";
+@import "variables.scss";
+
+$breakpoints: (
+	"phone": 400px,
+	"phone-wide": 480px,
+	"phablet": 560px,
+	"tablet-small": 640px,
+	"tablet": 768px,
+	"tablet-wide": 1024px,
+	"desktop": 1248px,
+	"desktop-wide": 1440px,
+);
+
+body {
+	@include no-touch-select;
+	color: $black;
+	font-size: 16px;
+	&.lock {
+		overflow: hidden;
+	}
+}
+
+.ibg {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	img {
+		display: none;
+	}
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	width: 100%;
+	min-height: 100%;
+	overflow: hidden;
+}
+
+.content {
+	flex: 1 1 auto;
+}
+
+.container {
+	max-width: $maxwidth + px;
+	margin: 0 auto;
+	width: 100%;
+	@media (max-width: $maxwidth1) {
+		max-width: 970px;
+	}
+	@media (max-width: $maxwidth2) {
+		max-width: 750px;
+	}
+	@media (max-width: $maxwidth3) {
+		max-width: none;
+		padding: 0 10px;
+	}
+}
+
+
+//==================================================================================================//
+//             ПОДКЛЮЧЕНИЕ ДОПОЛНИТЕЛЬНЫХ ФАЙЛОВ СТИЛЕЙ                                             //
+//==================================================================================================//
+
+@import "fonts";
+@import "null.scss";
+@import "ui.scss";
+@import "small-blocks.scss";
+@include scrollBarMovesPageNone;
+
+
+
+.s {
+	&-banner {
+		margin: 0px 0px 32px 0px;
+		@media (max-width: $maxwidth3) {
+			display: none;
+		}
+	}
+	&-breadcrumbs {
+		width: 100%;
+	}
+
+	&-header {
+		@media (max-width: $maxwidth3) {
+			border-bottom: 0.5px solid #f8f8f8;
+		}
+	}
+
+	&-category {
+		position: relative;
+		margin: 0px 0px 32px 0px;
+	}
+
+	&-footer {
+	}
+}
+
+
+//Подключение стилей всех страниц
+@import "../pages/index.scss";
+
+//Подключение стилей модулей
+@import "../modules/modules.scss";

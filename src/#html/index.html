@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('./template/main.html', {
+    "title": "Главная",
+    "keywords": "Ключевые слова",
+    "description": "Описание"
+})
+<body class="lock">
+    @@include('./modules/preloader/preloader.html')
+    <div class="wrapper">
+        <!-- Шапка -->
+        @@include('./modules/header/header.html')
+        <!-- Контент -->
+        <div class="content">
+            @@include('./modules/banner/banner.html')
+            <div class="s-category">
+                <div class="container js-move-here">
+                    <div class="category">
+                        <aside data-da="category__main, 2, 767" class="category__aside">
+                            <div class="filter-category">
+                                <div class="filter-category__line js-filter-category-line">
+                                    <span>Фильтр</span>
+                                </div>
+                                <div class="filter-category__body">
+                                    <div class="filter-category__header">
+                                        <div class="category-list">
+                                            @@include('./modules/category-list/category-list.html')
+                                        </div>
+                                    </div>
+                                    <div class="filter-item">
+                                        <div class="filter-item__header">
+                                            <span class="filter-item__title">Размер</span>
+                                        </div>
+                                        <div class="filter-item__body">
+                                            @@include('./modules/filter/filter-checkbox.html')
+                                        </div>
+                                    </div>
+                                    <div class="filter-item">
+                                        <div class="filter-item__header">
+                                            <span class="filter-item__title">Чашка</span>
+                                        </div>
+                                        <div class="filter-item__body">
+                                            @@include('./modules/filter/filter-checkbox-2.html')
+                                        </div>
+                                    </div>
+                                    <div class="filter-item">
+                                        <div class="filter-item__header">
+                                            <span class="filter-item__title">Доставка</span>
+                                        </div>
+                                        <div class="filter-item__body">
+                                            @@include('./modules/filter/filter-radio.html')
+                                        </div>
+                                    </div>
+                                    <div class="filter-item">
+                                        <div class="filter-item__header">
+                                            <span class="filter-item__title">Цена</span>
+                                        </div>
+                                        <div class="filter-item__body">
+                                            @@include('./modules/filter/filter-slider.html')
+                                        </div>
+                                    </div>
+                                    <div class="filter-item">
+                                        <div class="filter-item__header">
+                                            <span class="filter-item__title">Цвет</span>
+                                        </div>
+                                        <div class="filter-item__body">
+                                            @@include('./modules/filter/filter-color.html')
+                                        </div>
+                                    </div>
+                                    <div class="filter-category__footer">
+                                        <button class="btn btn--primary">Показать 55 товаров</button>
+                                        <button class="btn btn--secondary"><span>X</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </aside>
+                        <main class="category__main">
+                            @@include('./modules/breadcrumbs/breadcrumbs.html')
+                            <div class="title-section">
+                                <div class="title-section__title">Бюстгалтеры без косточек</div>
+                            </div>
+                            <div class="category__content">
+                                @@loop('./modules/product-card/card.html', 'db.json')
+                            </div>
+                            <div class="category__pagination">
+                                @@include('./modules/pagination/pagination.html', {
+                                    "pages":[1,2,3,4,5],
+                                    "current": 0
+                                })
+                                <a href="#" class="category__button btn btn--secondary">Показать еще</a>
+                            </div>
+                            <div data-da="js-move-here, last, 993" class="category__footer">
+                                <p>Anita is well-known as a specialist for top-quality lingerie and swimwear. The five brands Rosa Faia, Anita since 1886, Anita maternity, Anita care and Anita active serve a number of different target groups, but all share the same excellent fit, unrivalled comfort and impeccable quality.</p>
+                                <p>Anita offers various collections of bras and panties for every day, highly functional sports bras for sports at all levels of activity and also shapewear for special purposes, e.g. mastectomy bras to be worn after breast surgery.</p>
+                                <p>Rosa Faia offers a great variety of elegant lace lingerie, comfortable bras and figure-shaping bodies. The Rosa Faia Big Cup bras up to a J cup offer excellent support and are also available for very small waists and in small underbust measurements.</p>
+                            </div>
+                        </main>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="back-to-top" title="Наверх">↑</a>
+        @@include('./modules/footer/footer.html')
+    </div>
+    @@include('./template/scripts.html')
+</body>
+</html>

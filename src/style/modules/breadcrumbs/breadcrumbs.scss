@@ -1,0 +1,36 @@
+.breadcrumbs {
+	padding: 10px 0;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	@media (max-width: $maxwidth1) {
+		width: 500px;
+	}
+	@media (max-width: $maxwidth2) {
+		width: 400px;
+	}
+	@media (max-width: $maxwidth3) {
+		width: 500px;
+	}
+	@media (max-width: $maxwidth4) {
+		width: 300px;
+	}
+	&__item {
+		display: inline; // force the inlining
+		&:not(:last-child):after {
+			content: "-";
+		}
+	}
+
+	// .breadcrumbs__link
+	&__link {
+		font-family: "Cormorant";
+		font-style: italic;
+		font-size: 22px;
+		color: $breadcrumbs-link;
+		@media (max-width: $maxwidth3) {
+			font-family: "Circe";
+			font-size: 18px;
+		}
+	}
+}

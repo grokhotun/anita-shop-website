@@ -1,0 +1,108 @@
+[
+    {
+        "photo":"img/products/1.png",
+        "name":"Бюстгальтер без косточек Clara Ar",
+        "new": true,
+        "sale": true,
+        "priceOld":"7 800р",
+        "priceNew":"4 499р",
+        "module":"@@include('./modules/color-palettes/palette-1.html')"
+    },
+    {
+        "photo":"img/products/2.png",
+        "name":"Бюстгальтер без косточек Clara Ar",
+        "new": true,
+        "sale": false,
+        "priceNew":"8 200р",
+        "module":"@@include('./modules/color-palettes/palette-2.html')"
+    },
+    {
+        "photo":"img/products/3.png",
+        "name":"Бюстгальтер без косточек Clara Ar",
+        "new": true,
+        "sale": true,
+        "priceOld":"5 800р",
+        "priceNew":"1 699р",
+        "module":"@@include('./modules/color-palettes/palette-3.html')"
+    },
+    {
+        "photo":"img/products/4.png",
+        "name":"Бюстгальтер без косточек Clara Ar",
+        "new": true,
+        "sale": false,
+        "priceOld":"7 800р",
+        "priceNew":"8 000р",
+        "module":"@@include('./modules/color-palettes/palette-4.html')"
+    },
+    {
+        "photo":"img/products/5.png",
+        "name":"Бюстгальтер без косточек Clara Ar",
+        "new": true,
+        "sale": true,
+        "priceOld":"7 800р",
+        "priceNew":"8 000р",
+        "module":"@@include('./modules/color-palettes/palette-5.html')"
+    },
+    {
+        "photo":"img/products/6.png",
+        "name":"Бюстгальтер без косточек Clara Ar",
+        "new": true,
+        "sale": true,
+        "priceOld":"7 800р",
+        "priceNew":"8 000р",
+        "module":"@@include('./modules/color-palettes/palette-6.html')"
+    },
+    {
+        "photo":"img/products/7.png",
+        "name":"Бюстгальтер без косточек Clara Ar",
+        "new": true,
+        "sale": false,
+        "priceOld":"7 800",
+        "priceNew":"8 000",
+        "module":"@@include('./modules/color-palettes/palette-7.html')"
+    },
+    {
+        "photo":"img/products/8.png",
+        "name":"Бюстгальтер без косточек Clara Ar",
+        "new": false,
+        "sale": true,
+        "priceOld":"7 800р",
+        "priceNew":"8 000р",
+        "module":"@@include('./modules/color-palettes/palette-8.html')"
+    },
+    {
+        "photo":"img/products/9.png",
+        "name":"Бюстгальтер без косточек Clara Ar",
+        "new": false,
+        "sale": true,
+        "priceOld":"7 800р",
+        "priceNew":"8 000р",
+        "module":"@@include('./modules/color-palettes/palette-9.html')"
+    },
+    {
+        "photo":"img/products/1.png",
+        "name":"Бюстгальтер без косточек Clara Ar",
+        "new": false,
+        "sale": true,
+        "priceOld":"7 800р",
+        "priceNew":"8 000р",
+        "module":"@@include('./modules/color-palettes/palette-10.html')"
+    },
+    {
+        "photo":"img/products/2.png",
+        "name":"Бюстгальтер без косточек Clara Ar",
+        "new": true,
+        "sale": true,
+        "priceOld":"7 800р",
+        "priceNew":"8 000р",
+        "module":"@@include('./modules/color-palettes/palette-11.html')"
+    },
+    {
+        "photo":"img/products/3.png",
+        "name":"Бюстгальтер без косточек Clara Ar",
+        "new": true,
+        "sale": false,
+        "priceNew":"8 000р",
+        "module":"@@include('./modules/color-palettes/palette-12.html')"
+    }
+]
